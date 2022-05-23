@@ -35,8 +35,8 @@ module Build
 				Default = Polling
 			end
 		
-			def self.new(*args)
-				Default.new(*args)
+			def self.new(*arguments, **options)
+				Default.new(*arguments, **options)
 			end
 		end
 	end
