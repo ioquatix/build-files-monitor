@@ -17,17 +17,14 @@ Gem::Specification.new do |spec|
 	
 	spec.metadata = {
 		"funding_uri" => "https://github.com/sponsors/ioquatix/",
+		"source_code_uri" => "https://github.com/ioquatix/build-files-monitor.git",
 	}
 	
-	spec.files = Dir.glob('{lib}/**/*', File::FNM_DOTMATCH, base: __dir__)
+	spec.files = Dir.glob(['{lib}/**/*', '*.md'], File::FNM_DOTMATCH, base: __dir__)
 	
-	spec.required_ruby_version = ">= 2.4.0"
+	spec.required_ruby_version = ">= 3.1"
 	
 	spec.add_dependency "build-files", "~> 1.8"
 	spec.add_dependency "rb-fsevent"
 	spec.add_dependency "rb-inotify"
-	
-	spec.add_development_dependency "bundler"
-	spec.add_development_dependency "covered"
-	spec.add_development_dependency "rspec", "~> 3.4"
 end
