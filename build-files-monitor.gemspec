@@ -16,6 +16,7 @@ Gem::Specification.new do |spec|
 	spec.homepage = "https://github.com/ioquatix/build-files-monitor"
 	
 	spec.metadata = {
+		"documentation_uri" => "https://ioquatix.github.io/build-files-monitor/",
 		"funding_uri" => "https://github.com/sponsors/ioquatix/",
 		"source_code_uri" => "https://github.com/ioquatix/build-files-monitor.git",
 	}
@@ -25,6 +26,5 @@ Gem::Specification.new do |spec|
 	spec.required_ruby_version = ">= 3.1"
 	
 	spec.add_dependency "build-files", "~> 1.8"
-	spec.add_dependency "rb-fsevent"
-	spec.add_dependency "rb-inotify"
+	spec.add_dependency "io-watch", "~> 0.2"
 end

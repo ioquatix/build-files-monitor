@@ -82,9 +82,7 @@ module Build
 					handle
 				end
 				
-				def run(**options, &block)
-					latency = options.fetch(:latency, 1.0)
-					
+				def run(latency: 0.1, **options, &block)
 					catch(:interrupt) do
 						while true
 							self.update(self.roots)
